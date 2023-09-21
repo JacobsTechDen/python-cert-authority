@@ -15,20 +15,21 @@ I used Python 3.11.3 to make this - please use 3.11+ for the best compatibility.
 <u>Generating the CA</u>
 This is the syntax for generating your CA cert.
 
-python3 generate_ca.py <common_name> <org_name> <town_name> <state_name> <country_initials>
+<code>python3 generate_ca.py <common_name> <org_name> <town_name> <state_name> <country_initials></code>
 
 Let's say I want to generate a certificate for GitHub, the command would be:
-python3 generate_ca.py 'GitHub' 'GitHub' 'San Francisco' 'California' 'US'
+<br><br>
+<code>python3 generate_ca.py 'GitHub' 'GitHub' 'San Francisco' 'California' 'US'</code>
 It will do its job and then export the private key and certificate (both as .pem and as .crt)
 
 <hr>
 <u>Generating a certificate in that CA</u>
 This is the syntax for generating a certificate within your CA
 
-python3 generate_cert_with_authority.py <domain_name>
+<code>python3 generate_cert_with_authority.py <domain_name></code>
 
 Now let's create a certificate for example.com
-python3 generate_cert_with_authority.py 'example.com'.
+<code>python3 generate_cert_with_authority.py 'example.com'</code>
 
 You now have these files: ca_cert.pem, ca_cert.crt, ca_cert.crt, github.com.crt, github.com.pem, github.com_key.pem.
 If you do not, something has gone wrong.

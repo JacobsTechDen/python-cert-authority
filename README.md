@@ -34,9 +34,10 @@ Now let's create a certificate for example.com
 You now have these files: ca_cert.pem, ca_cert.crt, ca_cert.crt, github.com.crt, github.com.pem, github.com_key.pem.
 If you do not, something has gone wrong.
 <hr>
-
+<br>
 <u>Import your certificate into your computer</u>
-Use the import_cert_windows.py script for Windows - for Linux, please use Google to help you - all distros are somewhat different, and the process will not be the same.
+Use the <code>import_cert_windows.py</code> script for Windows - for Linux, please use Google to help you - all distros are somewhat different, and the process will not be the same.
+<h3>DISCLAIMER: The certificate you need to import is your CA cert - if you import the certficate for the individual website - it will not function properly.</h3>
 
 <hr>
 Upcoming updates

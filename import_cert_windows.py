@@ -19,4 +19,5 @@ def add_certificate_to_trusted_root(cert_file_path):
         print("certutil not found. Make sure you are running this script with administrative privileges.")
 
 if __name__ == "__main__":
-    add_certificate_to_trusted_root(path_to_cert)
+    cert_file_path = path_to_cert
+    add_certificate_to_trusted_root(cert_file_path)
